@@ -106,7 +106,7 @@ class AddDetailsReceiptViewController: UIViewController {
     }
     @IBAction func updatePriceLabel(_ sender: Any) {
         let price = priceTextField.floatValue
-        priceAmount.text = receiptController.floatToStringConversion(price)
+        priceAmount.text = receiptController.floatToStringConversion(price, "%.2f", "$")
         createGraph()
     }
 }

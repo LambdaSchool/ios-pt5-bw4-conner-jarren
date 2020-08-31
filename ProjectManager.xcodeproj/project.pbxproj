@@ -45,6 +45,7 @@
 		C3276C5624F42652001C4359 /* UIImage+Scaling.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3276C5524F42652001C4359 /* UIImage+Scaling.swift */; };
 		C328EB4324F89DFF004BA789 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C328EB4224F89DFF004BA789 /* MainViewController.swift */; };
 		C328EB4524F8AC44004BA789 /* DashboardMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C328EB4424F8AC44004BA789 /* DashboardMainViewController.swift */; };
+		C328EB4924FB5389004BA789 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C328EB4824FB5389004BA789 /* BudgetViewController.swift */; };
 		C32D7D2124EE074A00073746 /* ProjectsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32D7D2024EE074A00073746 /* ProjectsTableViewController.swift */; };
 		C32D7D2324EF613C00073746 /* ReceiptsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32D7D2224EF613C00073746 /* ReceiptsTableViewController.swift */; };
 		C32D7D2524EF650100073746 /* ReceiptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32D7D2424EF650100073746 /* ReceiptController.swift */; };
@@ -104,6 +105,7 @@
 		C3276C5524F42652001C4359 /* UIImage+Scaling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Scaling.swift"; sourceTree = "<group>"; };
 		C328EB4224F89DFF004BA789 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "ProjectManager/View Controllers/ProfileVC/MainViewController.swift"; sourceTree = SOURCE_ROOT; };
 		C328EB4424F8AC44004BA789 /* DashboardMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardMainViewController.swift; sourceTree = "<group>"; };
+		C328EB4824FB5389004BA789 /* BudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
 		C32D7D2024EE074A00073746 /* ProjectsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsTableViewController.swift; sourceTree = "<group>"; };
 		C32D7D2224EF613C00073746 /* ReceiptsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptsTableViewController.swift; sourceTree = "<group>"; };
 		C32D7D2424EF650100073746 /* ReceiptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptController.swift; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 				C392712524ECC9590032202A /* ProductsVC */,
 				C392712424ECC94C0032202A /* FinancesVC */,
 				C328EB4424F8AC44004BA789 /* DashboardMainViewController.swift */,
+				C328EB4824FB5389004BA789 /* BudgetViewController.swift */,
 			);
 			path = DashboardVC;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 				1323B25424EF774D00F9F4E1 /* NoteController.swift in Sources */,
 				13451D6A24ECD953009C9313 /* Product.swift in Sources */,
 				1320460424F0B42E008B38D7 /* ProductsTableViewController.swift in Sources */,
+				C328EB4924FB5389004BA789 /* BudgetViewController.swift in Sources */,
 				13CE97B424EF59F300200CB9 /* Receipt.swift in Sources */,
 				13CE97BC24EF71B600200CB9 /* NotesTableViewController.swift in Sources */,
 				C315608E24F60319003AC820 /* ProfileViewController.swift in Sources */,

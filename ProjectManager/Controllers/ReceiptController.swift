@@ -36,10 +36,19 @@ class ReceiptController {
         return dateFormatter.string(from: date)
     }
     
-    func floatToStringConversion(_ float: Float) -> String {
-        var string = String(format: "%.2f", float)
-        string = "$\(string)"
-        return string
-    }
+    func floatToStringConversion(_ float: Float, _ format: String, _ symbol: String) -> String {
+        if format == "%.2f" && symbol == "$"{
+            let string = String(format: format, float)
+            return "$\(string)"
+        } else if format == "rounded" && symbol == "%"{
+            var string = 0
+            if float.rounded().isFinite{
+                string = Int(float.rounded())
+            }
+            return "\(string)%"
+        } else {
+            return "..."
+        }
     
+}
 }

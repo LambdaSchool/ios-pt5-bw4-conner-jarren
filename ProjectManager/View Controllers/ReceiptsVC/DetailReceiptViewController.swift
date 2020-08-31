@@ -31,7 +31,7 @@ class DetailReceiptViewController: UIViewController {
         dateLabel.text = detailReceipt.date
         placeOfPurchaseLabel.text = detailReceipt.placeOfPurchase
         itemNameLabel.text = detailReceipt.title
-        priceLabel.text = receiptController.floatToStringConversion(detailReceipt.totalCost)
+        priceLabel.text = receiptController.floatToStringConversion(detailReceipt.totalCost, "%.2f", "$")
         quantityLabel.text = detailReceipt.quantity
         descriptionTextView.text = detailReceipt.description
     }

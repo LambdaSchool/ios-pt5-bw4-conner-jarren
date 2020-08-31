@@ -43,7 +43,7 @@ class ReviewReceiptViewController: UIViewController {
         placeOfPurchaseLabel.text = locationString
         dateLabel.text = dateString
         itemNameLabel.text = nameString
-        priceLabel.text = receiptController.floatToStringConversion(priceFloat)
+        priceLabel.text = receiptController.floatToStringConversion(priceFloat, "%.2f", "$")
         quantityLabel.text = quantityString
         categoryLabel.text = categoryString
         descriptionTextView.text = descriptionString

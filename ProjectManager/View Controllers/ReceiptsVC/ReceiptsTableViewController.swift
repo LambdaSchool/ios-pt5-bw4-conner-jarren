@@ -10,7 +10,7 @@ import UIKit
 
 class ReceiptsTableViewController: UITableViewController {
     
-    static var totalAmount: String = ""
+    static var totalAmount: Float = 0.0
     static var lastReceipt: Receipt!
 
     let receiptController = ReceiptController()
@@ -52,7 +52,7 @@ class ReceiptsTableViewController: UITableViewController {
         for receipts in receiptController.receipts {
             totalAmountHolder += receipts.totalCost
         }
-        ReceiptsTableViewController.totalAmount = receiptController.floatToStringConversion(totalAmountHolder)
+        ReceiptsTableViewController.totalAmount = totalAmountHolder
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -93,7 +93,7 @@ class ReceiptsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "receiptCell", for: indexPath)
 
-        cell.textLabel?.text = receiptController.floatToStringConversion(receiptController.receipts[indexPath.row].totalCost)
+        cell.textLabel?.text = receiptController.floatToStringConversion(receiptController.receipts[indexPath.row].totalCost, "%.2f", "$")
         cell.detailTextLabel?.text = "\(receiptController.receipts[indexPath.row].date)"
         
         return cell
